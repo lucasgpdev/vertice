@@ -1,0 +1,31 @@
+{
+  "name": "vertice",
+  "version": "0.1.0",
+  "private": true,
+  "description": "VÉRTICE — FPS 3D multiplayer competitivo no navegador",
+  "type": "module",
+  "workspaces": [
+    "shared",
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,client -c cyan,magenta \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client",
+    "start": "npm run start -w server",
+    "typecheck": "tsc -p shared --noEmit && tsc -p server --noEmit && tsc -p client --noEmit",
+    "test": "vitest run",
+    "test:unit": "vitest run shared",
+    "test:integration": "vitest run tests/integration",
+    "test:e2e": "node --import tsx tests/e2e/two-browsers.ts",
+    "test:soak": "node --import tsx tests/e2e/two-browsers.ts --minutes=5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "playwright-core": "^1.55.0",
+    "socket.io-client": "^4.8.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.0",
+    "vitest": "^5.1.0", "vite": "^8.3.0"
+  }
+}

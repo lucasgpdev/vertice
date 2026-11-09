@@ -1,0 +1,5 @@
+node_modules/
+client/dist/
+tests/e2e/output/
+*.log
+.DS_Store

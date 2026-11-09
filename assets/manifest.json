@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "notes": "Registro central de assets. 'procedural' = gerado por código (provisório); 'gltf' = arquivo GLB/GLTF em /assets. Para substituir um modelo, coloque o .glb na pasta e troque type/src da entrada — as mecânicas não mudam.",
+  "assets": [
+    { "id": "weapon.pistol-corvo.view", "type": "procedural", "builder": "pistolCorvo", "version": 1, "provisional": true },
+    { "id": "weapon.pistol-corvo.world", "type": "procedural", "builder": "pistolCorvo", "version": 1, "provisional": true },
+    { "id": "character.operator", "type": "procedural", "builder": "operator", "version": 1, "provisional": true },
+    { "id": "fp.arms", "type": "procedural", "builder": "fpArms", "version": 1, "provisional": true },
+    { "id": "tex.floor", "type": "procedural", "builder": "texFloor", "version": 1, "provisional": true },
+    { "id": "tex.concrete", "type": "procedural", "builder": "texConcrete", "version": 1, "provisional": true },
+    { "id": "tex.concreteDark", "type": "procedural", "builder": "texConcreteDark", "version": 1, "provisional": true },
+    { "id": "tex.metal", "type": "procedural", "builder": "texMetal", "version": 1, "provisional": true },
+    { "id": "tex.crate", "type": "procedural", "builder": "texCrate", "version": 1, "provisional": true },
+    { "id": "tex.trim", "type": "procedural", "builder": "texTrim", "version": 1, "provisional": true },
+    { "id": "sfx.pistol.fire", "type": "procedural", "builder": "sfxPistolFire", "version": 1, "provisional": true },
+    { "id": "sfx.pistol.reload", "type": "procedural", "builder": "sfxReload", "version": 1, "provisional": true },
+    { "id": "sfx.weapon.equip", "type": "procedural", "builder": "sfxEquip", "version": 1, "provisional": true },
+    { "id": "sfx.ui.hit", "type": "procedural", "builder": "sfxHit", "version": 1, "provisional": true },
+    { "id": "sfx.ui.headshot", "type": "procedural", "builder": "sfxHeadshot", "version": 1, "provisional": true },
+    { "id": "sfx.weapon.dry", "type": "procedural", "builder": "sfxDry", "version": 1, "provisional": true },
+    { "id": "sfx.ui.click", "type": "procedural", "builder": "sfxClick", "version": 1, "provisional": true }
+  ]
+}
